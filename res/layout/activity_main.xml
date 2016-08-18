@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.lanting.customviewdemo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lanting.customviewdemo.MainActivity" >
+
+    <com.lanting.customviewdemo.myview.CustomTopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backenable="true"
+        app:right_img="@android:drawable/ic_menu_save"
+        app:topbar_title="View家族探索Demo" />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:layout_centerHorizontal="true" />
+
+    <com.lanting.customviewdemo.myview.MyRecordBtn
+        android:id="@+id/main_myView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
